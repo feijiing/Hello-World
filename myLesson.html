@@ -1,0 +1,43 @@
+<script src="../asset/js/myLesson.js"></script>
+<script src="../libs/Chart.js"></script>
+<div class="col-lg-9" style=" background: rgba(0, 0, 0, 0.02);margin:50px 0px;padding-bottom: 0px;min-height: 700px;">
+	<ul class="nav nav-pills" style="margin: 20px">
+		<li class="active">
+			<a data-toggle="tab" onclick="getCanvasData()" href="#">我的学习</a>
+		</li>
+		<li>
+			<a data-toggle="tab" onclick="getMyLessonList('followList',1,6)" href="#">我的收藏</a>
+		</li>
+		<li>
+			<a data-toggle="tab" onclick="getMyLessonList('footprintList',1,6)" href="#">最近浏览</a>
+		</li>
+	</ul>
+	<div id="myLessonList">
+
+		
+	</div>
+		<div class="col-lg-12" style="text-align: center" >
+
+				<ul id='myLessonList_page'></ul>
+			
+			</div>
+			
+		<div class="col-lg-12" id="myChart">
+					<div class="col-lg-7" style=" text-align: left;border-right: 2px solid rgba(220,220,220,0.7);">
+						<p>时长(M)</p>
+						<canvas id="myLine" width="450" height="350"></canvas>
+					</div>
+					<div class="col-lg-4 chart-left" >
+						<canvas id="myPie" width="200" height="300"></canvas>
+						<div style="text-align: left" id="pieDetail">
+						</div>
+					</div>
+					<div class="col-lg-1 chart-right">
+						<p><a href="#">今天</a></p>
+						<p><a href="#" >本周</a></p>
+						<p><a href="#">本月</a></p>
+						<p><a href="#">今年</a></p>
+					</div>
+					</div>
+
+</div>
